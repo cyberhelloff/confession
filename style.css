@@ -1,0 +1,129 @@
+.container {
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            margin: 20px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 5px;
+        }
+
+        .popup {
+            display: none;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: absolute;
+            top: 30%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+        }
+        body {
+            font-family: 'Great Vibes', cursive;
+            text-align: center;
+            margin: 0;
+           background: linear-gradient(#e0bbd9, #5a4255, #e0bbd9 );
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #e91e63; /* Romantic color for the heading */
+        }
+
+        .buttons {
+            margin: 20px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 12px 24px;
+            margin: 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: #ff4081; /* Romantic color for the buttons */
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff5c8d; /* Lighter shade on hover for a soft effect */
+        }
+
+        .popup {
+            display: none;
+            background-color: #fff;
+            border: 1px solid #e91e63; /* Romantic color for the border */
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            position: absolute;
+            top: 30%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            font-family: 'Dancing Script'
+              cursive;
+            font-size: 24px;
+            color: #e91e63; /* Romantic color for the popup text */
+        }
+
+        /* Add a smooth fade-in animation for the popup */
+        .popup.fade-in {
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Add styling for the GIF */
+        .gif {
+            margin-top: 20px;
+        }
+
+        .gif img {
+            width: 400px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Heart animation */
+        .heart {
+            
+            position: absolute;
+            z-index: 10;
+            pointer-events: none;
+            width: 100px;
+            height: 100px;
+            background: url(https://media.tenor.com/uGc4wAPKr_0AAAAi/heart.gif) no-repeat;
+            background-size: contain;
+            animation: heart-fall linear infinite;
+            top: 0;
+        }
+
+        @keyframes heart-fall {
+            0% {
+                opacity: 1;
+                transform: translateY(-100px) rotate(0deg);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
